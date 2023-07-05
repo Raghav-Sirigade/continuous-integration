@@ -1,6 +1,7 @@
 install:
 		pip install --upgrade pip &&\
-		pip install -r requirements.txt
+		pip install -r requirements.txt &&\
+		pip install --upgrade click==8.0.2
 
 test:
 	python -m pytest -vv test_hello.py
